@@ -42,3 +42,7 @@ echo
         echo
         done
 fi
+else 
+        echo "flac is not mandatory"
+        echo "command is an existing bash command"
+        echo "syntax is ==>    ./flacman <command> (<flac>)" 
