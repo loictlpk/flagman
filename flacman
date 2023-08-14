@@ -8,6 +8,10 @@
 # #### PROGRAM ####
 clear
 
+echo "flac is not mandatory"
+echo "command is an existing bash command"
+echo "syntax is ==>    ./flacman <command> (<flac>)" 
+
 if [ "$#" -eq 1 ]
 then
         man $1
@@ -42,7 +46,3 @@ echo
         echo
         done
 fi
-else 
-        echo "flac is not mandatory"
-        echo "command is an existing bash command"
-        echo "syntax is ==>    ./flacman <command> (<flac>)" 
