@@ -11,6 +11,8 @@ echo "flac is not mandatory"
 echo "command is an existing bash command"
 echo "syntax is ==>    ./flacman <command> (<flac>)" 
 
+echo 
+
 if [ "$#" -eq 1 ]
 then
         man $1
@@ -35,7 +37,7 @@ then
         done
 echo
 # ################ COMMAND ################
-        man $1 | grep "\-$2"
+        man $1 | nl | grep "\-$2"
 #
 echo
         for((count=0; count<11; count++)); do
