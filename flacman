@@ -11,6 +11,10 @@ echo "flac is not mandatory"
 echo "command is an existing bash command"
 echo "syntax is ==>    ./flacman <command> (<flac>)" 
 
+echo "flac is not mandatory"
+echo "command is an existing bash command"
+echo "syntax is ==>    ./flacman <command> (<flac>)" 
+
 if [ "$#" -eq 1 ]
 then
         man $1
@@ -44,11 +48,4 @@ echo
         for((count=0; count<3; count++)); do
         echo
         done
-<<<<<<< HEAD
-=======
-else
-        echo "flac is not mandatory"
-        echo "command is an existing bash command"
-        echo "syntax is ==>    ./flacman <command> (<flac>)" 
->>>>>>> b30c13e54328d39e3b7a19e8e60f1d6ea219f64a
 fi
