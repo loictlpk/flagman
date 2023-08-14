@@ -41,8 +41,8 @@ echo
         for((count=0; count<3; count++)); do
         echo
         done
-fi
-else 
+else
         echo "flac is not mandatory"
         echo "command is an existing bash command"
         echo "syntax is ==>    ./flacman <command> (<flac>)" 
+fi
