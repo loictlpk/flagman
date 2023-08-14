@@ -37,7 +37,7 @@ then
         done
 echo
 # ################ COMMAND ################
-        man $1 | nl | grep "\-$2"
+        man $1 | nl | grep -A 1 "\-$2"
 #
 echo
         for((count=0; count<11; count++)); do
