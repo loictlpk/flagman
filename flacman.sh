@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+# TEST
 # flacman  created by loictlpk on github is designed to search flac description for a linux command
 # USE ==>       ./flacman  <CMD>  ( <FLAC> )
 
