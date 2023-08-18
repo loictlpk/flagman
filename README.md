@@ -3,16 +3,16 @@
 ```
 $ git clone <link>
 ```
-* you can paste the script to /bin/flacman local repo.
+* you can paste the script to /bin/flagman local repo.
 ```
-$ cp <this script> /bin/flacman
-$ chmod a+x /bin/flacman
+$ cp <this script> /bin/flagman
+$ chmod a+x /bin/flagman
 ```
 * Now, enjoy !
 ```
-$ flacman <CMD> <FLAC>
+$ flagman <CMD> <FLAG>
 ```
 or 
 ```
-$ flacman 
+$ flagman <CMD>
 ```

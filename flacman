@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# flacman (created by loictlpk/flacman on github) is designed to search flac description for a linux command
-# syntax        ==>     flacman  <CMD>  <FLAC>
+# flagman (created by loictlpk/flagman on github) is designed to search flac description for a linux command
+# syntax        ==>     flagman  <CMD>  <FLAG>
 
 
 # #### PROGRAM ####
 clear
 
-echo "flac is not mandatory AND "
+echo "flag is not mandatory "
 echo "command is an existing bash command"
-echo "syntax is ==>    flacman <command> <flac>" 
+echo "syntax is ==>    flagman <command> <flag>" 
 
 echo 
 
@@ -20,14 +20,14 @@ then
 fi
 if [ "$#" -gt 1 ]
 then
-        echo "search description for flac \"-$2\" with command \"$1\""
+        echo "search description for flag \"-$2\" with command \"$1\""
         for((count=0; count<2; count++)); do
                 echo -n "."
                 sleep 0.5
         done
         clear
 
-        echo "search description for flac \"-$2\" with command \"$1\""
+        echo "search description for flag \"-$2\" with command \"$1\""
 
         for((count=0; count<2; count++)); do
         echo
@@ -35,7 +35,7 @@ then
 
 echo
 # ################ COMMAND ################
-        ( man $1 | nl | grep -A 1 "\-$2") || (clear && echo "NO FLAC IS FOUNDED.") 
+        ( man $1 | nl | grep -A 1 "\-$2") || (clear && echo "NO FLAG IS FOUNDED.") 
 #
 
 echo
