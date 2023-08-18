@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# flacman  created by loictlpk on github is designed to search flac description for a linux command
-# USE ==>       ./flacman  <CMD>  ( <FLAC> )
+# flacman (created by loictlpk/flacman on github) is designed to search flac description for a linux command
+# syntax        ==>     ./flacman  <CMD>  <FLAC>
 
 
 # #### PROGRAM ####
 clear
 
-echo "flac is not mandatory"
+echo "flac is not mandatory AND "
 echo "command is an existing bash command"
-echo "syntax is ==>    ./flacman <command> (<flac>)" 
+echo "syntax is ==>    ./flacman <command> <flac>" 
 
 echo 
 
@@ -39,7 +39,4 @@ echo
         ( man $1 | nl | grep -A 1 "\-$2" ) || clear 
 #
 
-        for((count=0; count<3; count++)); do
-        echo
-        done
 fi
