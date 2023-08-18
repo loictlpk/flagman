@@ -26,7 +26,7 @@ then
                 sleep 0.5
         done
         clear
-        
+
         echo "search description for flac \"-$2\" with command \"$1\""
 
         for((count=0; count<2; count++)); do
@@ -35,7 +35,7 @@ then
 
 echo
 # ################ COMMAND ################
-        ( man $1 | nl | grep -A 1 "\-$2" ) || clear && echo "NO FLAC IS FOUND." 
+        (( man $1 | nl | grep -A 1 "\-$2" ) || clear) && echo "NO FLAC IS FOUND." 
 #
 
 echo
