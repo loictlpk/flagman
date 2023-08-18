@@ -33,17 +33,12 @@ then
         for((count=0; count<3; count++)); do
         echo
         done
-        for((count=0; count<11; count++)); do
-                echo -n "-"
-        done
+
 echo
 # ################ COMMAND ################
         ( man $1 | nl | grep -A 1 "\-$2" ) || clear 
 #
-echo
-        for((count=0; count<11; count++)); do
-                echo -n "-"
-        done
+
         for((count=0; count<3; count++)); do
         echo
         done
