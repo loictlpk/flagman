@@ -9,7 +9,7 @@ clear
 
 echo "flac is not mandatory AND "
 echo "command is an existing bash command"
-echo "syntax is ==>    ./flacman <command> <flac>" 
+echo "syntax is ==>    flacman <command> <flac>" 
 
 echo 
 
