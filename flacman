@@ -25,12 +25,11 @@ then
                 echo -n "."
                 sleep 0.5
         done
-
         clear
-
+        
         echo "search description for flac \"-$2\" with command \"$1\""
 
-        for((count=0; count<3; count++)); do
+        for((count=0; count<2; count++)); do
         echo
         done
 
