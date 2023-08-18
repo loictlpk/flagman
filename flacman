@@ -35,9 +35,8 @@ then
 
 echo
 # ################ COMMAND ################
-        (( man $1 | nl | grep -A 1 "\-$2" ) || clear) && echo "NO FLAC IS FOUND." 
+        ( man $1 | nl | grep -A 1 "\-$2" ) || clear && echo "NO FLAC IS FOUND." 
 #
-
 echo
 echo
 
