@@ -25,6 +25,7 @@ then
                 echo -n "."
                 sleep 0.5
         done
+
         clear
 
         echo "search description for flac \"-$2\" with command \"$1\""
@@ -37,7 +38,7 @@ then
         done
 echo
 # ################ COMMAND ################
-        man $1 | nl | grep -A 1 "\-$2"
+        ( man $1 | nl | grep -A 1 "\-$2" ) || clear 
 #
 echo
         for((count=0; count<11; count++)); do
