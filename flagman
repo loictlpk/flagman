@@ -23,7 +23,6 @@ then
         echo "search description for flag \"-$2\" with command \"$1\""
         for((count=0; count<2; count++)); do
                 echo -n "."
-                sleep 0.5
         done
         clear
 
