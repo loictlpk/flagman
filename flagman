@@ -20,12 +20,8 @@ then
 fi
 if [ "$#" -gt 1 ]
 then
-        echo "search description for flag \"-$2\" with command \"$1\""
-        for((count=0; count<2; count++)); do
-                echo -n "."
-        done
-        clear
-
+        echo -e "search description for flag \"-$2\" with command \"$1\" \n\n"
+        
         echo "search description for flag \"-$2\" with command \"$1\""
 
         for((count=0; count<2; count++)); do
